@@ -1,22 +1,39 @@
 {
   "name": "workout-api",
-  "version": "0.1.0",
-  "private": true,
+  "version": "1.0.0",
+  "description": "An api which generates super set workouts",
+  "main": "index.ts",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "tsc",
+    "start": "node src/index.ts",
+    "dev": "nodemon src/index.ts",
+    "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OmerMohideen/workout-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OmerMohideen/workout-api/issues"
+  },
+  "homepage": "https://github.com/OmerMohideen/workout-api#readme",
   "dependencies": {
-    "@types/node": "18.15.0",
-    "@types/react": "18.0.28",
-    "@types/react-dom": "18.0.11",
-    "eslint": "8.36.0",
-    "eslint-config-next": "13.2.4",
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "typescript": "4.9.5"
+    "@koa/cors": "^4.0.0",
+    "dotenv": "^16.0.3",
+    "http-status-codes": "^2.2.0",
+    "koa": "^2.14.1",
+    "koa-helmet": "^6.1.0",
+    "koa-router": "^12.0.0",
+    "koa2-ratelimit": "^1.1.2"
+  },
+  "devDependencies": {
+    "@types/koa": "^2.13.5",
+    "@types/koa__cors": "^3.3.1",
+    "@types/koa-router": "^7.4.4",
+    "@types/koa2-ratelimit": "^0.9.3",
+    "@types/node": "^18.11.18"
   }
 }

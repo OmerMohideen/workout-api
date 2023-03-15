@@ -1,7 +1,11 @@
+import Body from "./components/Body";
+import Header from "./components/Header";
+
 export default function Home() {
   return (
-    <div className="bg-red-100 color-green-100">
-      Hi
+    <div>
+      <Header />
+      <Body />
     </div>
   )
 }
